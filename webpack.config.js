@@ -7,8 +7,8 @@ module.exports = {
     index: './src/index.js',
   },
   devServer: {
-        static: './dist',
-      },
+    static: './dist',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
