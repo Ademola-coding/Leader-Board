@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    list-style: none;\r\n}\r\n\r\nbody {\r\n  background-color: rgb(167, 167, 167);\r\n}\r\n\r\n.board {\r\n  margin: 5%;\r\n  margin-bottom: 0;\r\n  background-color: rgb(0, 95, 95);\r\n  display: grid;\r\n  gap: 5%;\r\n  border-top-right-radius: 15px;\r\n  border-top-left-radius: 15px;\r\n}\r\n\r\nh1 {\r\n  padding: 5% 3%;\r\n}\r\n\r\n.recent {\r\n  grid-column: 1;\r\n  margin-left: 8%;\r\n  margin-right: 1%;\r\n  background-color: rgb(236, 236, 236);\r\n  border-radius: 10px;\r\n}\r\n\r\n.rec-scores-refresh {\r\n  display: flex;\r\n  padding-bottom: 5%;\r\n}\r\n\r\n#tit {\r\n  flex: 1;\r\n  margin-left: 2%;\r\n}\r\n\r\n#refresh-btn {\r\n flex: .1;\r\n margin-right: 2%;\r\n} \r\n\r\n.list {\r\n  margin: 0 2%;\r\n}\r\n\r\n.add-score {\r\n  grid-column: 2;\r\n}\r\n\r\n.H-addScore {\r\n  padding-bottom: 5%;\r\n}\r\n\r\nform {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-right: 5%;\r\n}\r\n\r\nbutton {\r\n  align-self: flex-end;\r\n  font-weight: bolder;\r\n}\r\n\r\n#Y_name,#Y_score {\r\n  margin-bottom: 10%;\r\n  height: 35px;\r\n  outline: none;\r\n}\r\n\r\n.reserved {\r\n  margin: 0 5%;\r\n  padding-top: 10%;\r\n  text-align: center;\r\n  background-color: rgb(0, 95, 95);\r\n  border-bottom-right-radius: 15px;\r\n  border-bottom-left-radius: 15px;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  list-style: none;\r\n}\r\n\r\nbody {\r\n  background-color: rgb(167, 167, 167);\r\n}\r\n\r\n.board {\r\n  margin: 5%;\r\n  margin-bottom: 0;\r\n  background-color: rgb(0, 95, 95);\r\n  display: grid;\r\n  gap: 5%;\r\n  border-top-right-radius: 15px;\r\n  border-top-left-radius: 15px;\r\n}\r\n\r\nh1 {\r\n  padding: 5% 3%;\r\n}\r\n\r\n.recent {\r\n  grid-column: 1;\r\n  margin-left: 8%;\r\n  margin-right: 1%;\r\n  background-color: rgb(236, 236, 236);\r\n  border-radius: 10px;\r\n}\r\n\r\n.rec-scores-refresh {\r\n  display: flex;\r\n  padding-bottom: 5%;\r\n}\r\n\r\n#tit {\r\n  flex: 1;\r\n  margin-left: 2%;\r\n}\r\n\r\n#refresh-btn {\r\n  flex: 0.1;\r\n  margin-right: 2%;\r\n}\r\n\r\n.list {\r\n  margin: 0 2%;\r\n}\r\n\r\n.add-score {\r\n  grid-column: 2;\r\n}\r\n\r\n.H-addScore {\r\n  padding-bottom: 5%;\r\n}\r\n\r\nform {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-right: 5%;\r\n}\r\n\r\nbutton {\r\n  align-self: flex-end;\r\n  font-weight: bolder;\r\n}\r\n\r\n#Y_name,\r\n#Y_score {\r\n  margin-bottom: 10%;\r\n  height: 35px;\r\n  outline: none;\r\n}\r\n\r\n.reserved {\r\n  margin: 0 5%;\r\n  padding-top: 10%;\r\n  text-align: center;\r\n  background-color: rgb(0, 95, 95);\r\n  border-bottom-right-radius: 15px;\r\n  border-bottom-left-radius: 15px;\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -552,14 +552,6 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
-
-class Board {
-    constructor( boardData = [] ) {
-        boardData = this.boardData
-    }
-
-
-}
 })();
 
 /******/ })()
