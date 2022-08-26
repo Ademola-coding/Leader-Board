@@ -472,6 +472,49 @@ module.exports = function (cssWithMappingToString) {
   return list;
 };
 
+/***/ }),
+/* 11 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+class LeaderBoard {
+    constructor() {
+      this.url =
+        'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+    }
+
+    async Game(gameName) {
+      const response = await fetch(this.url, {
+      method: 'POST',
+      body: JSON.stringify({ name: gameName, }),
+      headers: { 'Content-type': 'application/json; charset=UTF-8', }, });
+
+      const recievedResponse = await response.json();
+      return recievedResponse;
+    }
+  
+    async getScores(gameID) {
+      const response = await fetch(`${this.url}${gameID}/scores/`);
+      const recievedResponse = await response.json();
+      return recievedResponse;
+    }
+  
+    async postScore(gameID, username, score) {
+        const response = await fetch(`${this.url}${gameID}/scores/`, {
+        method: 'POST',
+        body: JSON.stringify({ user: username, score, }),
+        headers: { 'Content-type': 'application/json; charset=UTF-8', }, });
+
+        const recievedResponse = await response.json();
+        return recievedResponse;
+    }
+  }
+  
+  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LeaderBoard);
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -551,7 +594,43 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _API_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+  
+  const Form = document.querySelector('form')
+  const player = document.querySelector('#Y_name')
+  const playerScore = document.querySelector('#Y_score')
+  const list = document.querySelector('.list')
+  const refreshBtn = document.querySelector('#refresh-btn')
 
+  ;
+  const LBA = new _API_api_js__WEBPACK_IMPORTED_MODULE_1__["default"] 
+
+  let gameId;
+  document.addEventListener('DOMContentLoaded', () => {
+  LBA.Game('my cool new game')
+     .then((response) => response.result.split(' '))
+     .then((res) => {
+      [gameId] = [res[3]];
+    });
+  })
+
+  Form.addEventListener('submit', (e) => {
+   LBA.postScore(gameId, player.value, playerScore.value);
+   player.value = '';
+   playerScore.value = '';
+   e.preventDefault();
+  })
+
+  const returnedData = (Data) => {
+  list.innerHTML = '';
+  Data.forEach((item) => {
+    list.innerHTML += `<li class="item">${item.user} : ${item.score}</li>`;
+   });
+  };
+
+  refreshBtn.addEventListener('click', () => {
+  LBA.getScores(gameId).then((resData) => returnedData(resData.result));
+  });
 })();
 
 /******/ })()
