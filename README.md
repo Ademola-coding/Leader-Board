@@ -3,8 +3,8 @@
 
 ## Built With
 
-- Major languages JavaScript
-- Technologies used Webpack
+- Major languages - JavaScript
+- Technologies used - Webpack
 
 ## Live Demo 
 
