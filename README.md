@@ -8,7 +8,7 @@
 
 ## Live Demo 
 
-[Live Demo Link]()
+[Live Demo Link](https://ademola-coding.github.io/Leader-Board/)
 
 ## Getting Started
 
