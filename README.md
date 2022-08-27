@@ -6,9 +6,9 @@
 - Major languages JavaScript
 - Technologies used Webpack
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]()
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ To get a local copy up and running it, follow these simple steps.
 
 2. Copy the following link and paste it into your VSCode or your terminal:
 
-> https://github.com/Ademola-coding/Sneak-Peek-Awesome-books.git
+> https://github.com/Ademola-coding/Leader-Board.git
 
 3. Store it in the file you created before.
 
