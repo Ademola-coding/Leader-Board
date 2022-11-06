@@ -9,6 +9,10 @@ body {
   background-color: rgb(167, 167, 167);
 }
 
+.item:nth-child(even) {
+  background-color: rgb(159, 159, 159);
+}
+
 .board {
   margin: 5%;
   margin-bottom: 0;
