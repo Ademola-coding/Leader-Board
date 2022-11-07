@@ -1,52 +1,75 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Leader-Board
-> A leader-board website where you can add new candidate, save their data to an API and also consume the data from the API
+
+> Description of the Project
+ 
+ This is a web application which interacts with an API where users can post their names and score and on refresh all list of scores will be rendered o the screen, it is built with HTML, CSS, JavaScript and Webpack.
+ 
+![LeaderBoard 11-7-2022 7-50-55 PM](https://user-images.githubusercontent.com/96092850/200392588-7103439c-be78-434a-9f42-ff2c3fb533c5.png)
+
+ [Click me for video Descriptio and Preview](https://www.loom.com/share/701f674fa6944e5e80b422f711a6f954)
 
 ## Built With
 
-- Major languages - JavaScript
-- Technologies used - Webpack
+- Major languages: Html, Css and Javascript
+- Technologies used: linter, lightHouse, Weblint, Webpack.
 
-## Live Demo 
+## Live Demo here
 
 [Live Demo Link](https://ademola-coding.github.io/Leader-Board/)
 
 ## Getting Started
 
-To get a local copy up and running it, follow these simple steps.
+you can have a copy of this project by cloning this repo to your local machine
+`https://github.com/Ademola-coding/Leader-Board.git`
+
+## procedure
+- open git bash
+- git mkdir Leader-Board
+- cd Leader-Board
+- git clone `https://github.com/Ademola-coding/Leader-Board.git`
+- code .
+
+## Install
+ 
+ - `npm i`
+ 
+ ## Run
+ - `npm start`
 
 ### Prerequisites
 
+- **Web Browser**
 - Internet Service. 
 - Basic Knowledge about Git and Github.
 - VSCode.
 
-### Setup
-
-1. Create an empty folder in your computer to store the clone.
-
-2. Copy the following link and paste it into your VSCode or your terminal:
-
-> https://github.com/Ademola-coding/Leader-Board.git
-
-3. Store it in the file you created before.
-
-4. Create a new branch for working and make changes to adapt it according to your requirements.
-
+with the steps above, you can have a copy of the project 
 
 ## Author
 
 👤 **Ademola Owoeye**
 
-- GitHub: [@Ademola](https://github.com/Ademola-coding)
-- Twitter: [@twitterhandle](@steady1700)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ademola-owoeye-0bb344223/)
+- GitHub: [@githubhandle](https://github.com/Ademola-coding)
+- Twitter: [@twitterhandle](https://twitter.com/steady1700)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/resume-builder/urn:li:fs_memberResume:27973521/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](Issues · Ademola-coding/Leader-Board).
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
