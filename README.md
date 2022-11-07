@@ -67,8 +67,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Wireframe from Microverse
 - Hat tip to anyone whose code was used
 - Inspiration
+
 
 ## 📝 License
 
